@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <style>
+        .redColor {
+            color: #C40000 !important;
+        }
+
+        div.searchDIV-out {
+            border: 1px solid red;
+        }
+
+        div.searchDIV-middle {
+            max-width: 1024px;
+            margin: 0 auto;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            border: 1px solid red;
+        }
+
+        div.searchDIV {
+            margin: 50px auto;
+            width: 400px;
+            height: 40px;
+            display: block;
+            padding: 1px;
+            background-color: #C40000;
+        }
+
+        div.searchDIV input {
+            width: 275px;
+            height: 36px;
+            margin: 1px;
+            border: 1px solid #C40000;
+            color: white;
+            outline: none;
+            vertical-align: middle;
+        }
+
+        div.searchDIV button {
+            width: 110px;
+            border: 1px solid transparent;
+            background-color: #C40000;
+            color: white;
+            font: 20px bold;
+            vertical-align: middle;
+        }
+
+        div.searchBelow {
+            margin: 3px 0px 0px -20px;
+        }
+
+        div.searchBelow span {
+            color: #999999;
+        }
+
+        div.searchBelow a {
+            padding: 0px 20px 0px 20px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #999999;
+        }
+
+        a:hover {
+            color: #C40000;
+            text-decoration: none;
+        }
+
+        img.logo {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="searchDIV-out">
+    <div class="searchDIV-middle">
+        <div>
+            <a href="#nowhere"><img class="logo" src="http://how2j.cn/tmall/img/site/logo.gif"></a>
+        </div>
+        <div class="searchDIV">
+            <input type="text" placeholder="时尚男鞋 太阳镜" name="keyword">
+            <button type="submit">搜索</button>
+            <div class="searchBelow">
+                    <span> <a href="#nowhere"> 平衡车 </a> <span>|</span>
+                    </span> <span> <a href="#nowhere"> 扫地机器人 </a> <span>|</span>
+                    </span> <span> <a href="#nowhere"> 原汁机 </a> <span>|</span>
+                    </span> <span> <a href="#nowhere"> 冰箱 </a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
