@@ -119,7 +119,7 @@
 
         div.categoryWithCarousel div.head {
             width: 200px;
-            background-color: #C60A0A;
+            /*background-color: #C60A0A;*/
             height: 36px;
             line-height: 36px;
             font-size: 16px;
@@ -127,6 +127,8 @@
             color: white;
             margin-left: 20px;
             display: inline-block;
+            cursor: pointer
+
         }
 
         div.categoryWithCarousel div.rightMenu {
@@ -288,6 +290,21 @@
                 var cid = $(this).attr("cid");
                 hideProductsAsideCategorys(cid);
             });
+
+            var goodscategoryisShow = false;
+            $("div.head").click(function () {
+                if (goodscategoryisShow == false) {
+                    $(this).css("background-color", "#C60A0A");
+                    $("div.goodscategory").show();
+                    goodscategoryisShow = true;
+                } else {
+                    $(this).css("background-color", "#dd2727");
+                    $("div.goodscategory").hide();
+                    goodscategoryisShow = false;
+                }
+            })
+
+
         });
     </script>
     <!-- 产品列表 -->
@@ -543,7 +560,7 @@
         <div class="carouselBackgroundDiv">
         </div>
 
-        <div class="categoryWithCarousel">
+        <div class="goodscategory" style="display: none">
             <div style="position: relative;left: 0px;top: -510px;">
                 <div class="categoryMenu ">
                     <div class="eachCategory" cid="83">
